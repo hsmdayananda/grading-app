@@ -8,4 +8,5 @@ import java.util.Set;
 public interface ResultService {
 
     Set<Result> findResults(String userName);
+    Set<Result> findAll();
 }

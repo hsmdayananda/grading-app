@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
 import java.util.Set;
 
 @RestController
@@ -29,7 +28,7 @@ public class GradingAppController {
                                        ) {
 
 
-        Set<Result> results = resultService.findResults("hsmdayananda");
+        Set<Result> results = resultService.findResults(username);
         return results;
 
     }
@@ -39,7 +38,7 @@ public class GradingAppController {
     ) {
 
 
-        Set<Stats> stats = statsService.findStats("FIT");
+        Set<Stats> stats = statsService.findStats(courseName);
         return stats;
 
     }

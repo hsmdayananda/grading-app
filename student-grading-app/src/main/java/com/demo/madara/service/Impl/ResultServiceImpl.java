@@ -18,4 +18,9 @@ public class ResultServiceImpl implements ResultService {
         Set<Result>  results =  resultRepo.findByUserNameOrderByAttemptAsc(userName);
         return results;
     }
+
+    @Override
+    public Set<Result> findAll() {
+        return resultRepo.findAll();
+    }
 }

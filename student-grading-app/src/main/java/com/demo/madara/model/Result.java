@@ -12,13 +12,9 @@ public class Result {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     int id;
-    //@Column(name = "user_name")
     String userName;
-    //@Column(name = "assignment_id")
     String assignmentId;
-   // @Column(name = "quest")
     String quest;
-   // @Column(name = "attempt")
     int attempt;
 
     public int getId() {

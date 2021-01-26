@@ -9,4 +9,6 @@ import java.util.Set;
 
 public interface StatsRepo extends Repository<Stats, Integer> {
     Set<Stats> findByCourseName(String courseName);
+    Stats save(Stats s);
+
 }

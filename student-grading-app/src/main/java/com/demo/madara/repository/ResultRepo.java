@@ -8,4 +8,5 @@ import java.util.Set;
 
 public interface ResultRepo extends Repository<Result, Integer> {
     Set<Result> findByUserNameOrderByAttemptAsc(String userName);
+    Set<Result> findAll();
 }
